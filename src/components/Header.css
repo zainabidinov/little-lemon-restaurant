@@ -1,0 +1,27 @@
+.site-header {
+  position: relative;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  /* background-color: aquamarine; */
+}
+
+.site-header__wrapper {
+  /* background-color: blueviolet; */
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  align-self: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .site-header__wrapper {
+    flex-direction: column;
+  }
+  .logo-container {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+  }
+}
