@@ -1,0 +1,38 @@
+.about__container {
+  max-width: 950px;
+  margin-inline: auto;
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  padding-inline: 15px;
+}
+
+.about__container img {
+  max-width: 450px;
+  width: 100%;
+  max-height: 320px;
+  height: 100%;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about__desc h1 {
+  font-family: "Markazi Text";
+  font-size: 35px;
+  color: #fff;
+  padding-right: 25px;
+}
+
+.about__desc p {
+  font-family: Karla;
+  font-size: 20px;
+  color: #f1f5f9;
+  padding-right: 25px;
+}
+
+@media (max-width: 800px) {
+  .about__container {
+    flex-direction: column;
+  }
+}

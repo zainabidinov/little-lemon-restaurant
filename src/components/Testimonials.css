@@ -1,0 +1,71 @@
+.testimonials {
+  background-color: #f4ce14;
+}
+
+.testimonials__heading {
+  padding-top: 30px;
+  font-family: "Markazi Text";
+  font-size: 45px;
+  text-align: center;
+}
+
+.testimonials__container {
+  padding-top: 25px;
+  padding-bottom: 65px;
+  max-width: 950px;
+  margin-inline: auto;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+}
+
+.testimonials__container-item {
+  padding: 20px;
+  height: 135px;
+  max-width: 270px;
+  width: 100%;
+  background-color: #edefee;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-inline: 15px;
+}
+
+.testimonials__container-item p:first-child {
+  color: #374151;
+  font-family: Karla;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.testimonials__container-item p:last-child {
+  color: #6b7280;
+  font-family: Karla;
+}
+
+@media (max-width: 958px) {
+.testimonials__container {
+  grid-template-columns: repeat(2, 1fr);
+  padding-inline: 15px;
+  grid-row-gap: 15px;
+}
+
+.testimonials__container-item:nth-child(3) {
+  grid-column: span 2;
+}
+}
+
+@media (max-width: 658px) {
+.testimonials__container {
+  grid-template-columns: 1fr;
+  grid-row-gap: 15px;
+}
+
+.testimonials__container-item:nth-child(3) {
+  grid-column: span 1;
+}
+
+.testimonials__heading {
+  font-size: 38px;
+}
+}
