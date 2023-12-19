@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logoImg from "../assets/Logo.svg";
 import "./Header.css";
 import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IconContext } from "react-icons";
 import { IoClose } from "react-icons/io5";
@@ -21,24 +22,29 @@ function Header() {
         <nav>
           <ul className="nav__list">
             <li className="nav__item">
-              <Link to="/" className="nav__link">
-                Home
-              </Link>
-            </li>
-            <li className="nav__item">
-              <Link to="specials" smooth={true} duration={500} className="nav__link">
+              <Link
+                to="specials"
+                smooth={true}
+                duration={500}
+                className="nav__link"
+              >
                 Specials
               </Link>
             </li>
             <li className="nav__item">
-              <Link to="about" smooth={true} duration={500} className="nav__link">
+              <Link
+                to="about"
+                smooth={true}
+                duration={500}
+                className="nav__link"
+              >
                 About
               </Link>
             </li>
             <li className="nav__item">
-              <Link href="/booking-page" className="nav__link">
+              <RouterLink to="/booking" className="nav__link">
                 Reservations
-              </Link>
+              </RouterLink>
             </li>
           </ul>
           {!isMenuOpen && (
@@ -60,19 +66,31 @@ function Header() {
                   </Link>
                 </li>
                 <li className="nav__item">
-                  <Link to="specials" smooth={true} duration={500} className="nav__link-mobile" onClick={handleMobileMenu}>
+                  <Link
+                    to="specials"
+                    smooth={true}
+                    duration={500}
+                    className="nav__link-mobile"
+                    onClick={handleMobileMenu}
+                  >
                     Specials
                   </Link>
                 </li>
                 <li className="nav__item">
-                  <Link to="about" smooth={true} duration={500} className="nav__link-mobile" onClick={handleMobileMenu}>
+                  <Link
+                    to="about"
+                    smooth={true}
+                    duration={500}
+                    className="nav__link-mobile"
+                    onClick={handleMobileMenu}
+                  >
                     About
                   </Link>
                 </li>
                 <li className="nav__item">
-                  <Link href="/booking-page" className="nav__link-mobile">
+                  <RouterLink to="/booking" className="nav__link-mobile">
                     Reservations
-                  </Link>
+                  </RouterLink>
                 </li>
               </ul>
             </div>

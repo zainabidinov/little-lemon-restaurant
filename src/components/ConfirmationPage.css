@@ -1,0 +1,91 @@
+.confirmationPage {
+  height: 100vh;
+}
+
+.confirmationPage__container {
+  height: 100%;
+  background-image: url("../assets/dining-table.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.confirmationPage__reservation {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  margin-inline: auto;
+  background-color: #edefee;
+  padding: 0 15px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.confirmationPage__reservation h1 {
+  font-family: "Markazi Text";
+  font-size: 60px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.confirmationPage__reservation p {
+  font-family: "Karla";
+  font-size: 18px;
+}
+
+.confirmationPage__reservation-table {
+  display: flex;
+  justify-content: center;
+}
+
+.confirmationPage__reservation-table tr td:first-child {
+  font-weight: 500;
+  padding-right: 15px;
+}
+
+.confirmationPage__reservation-table tr td {
+  text-align: left;
+}
+
+.confirmationPage__reservation-button {
+  width: 100%;
+  max-width: 175px;
+  background-color: #f4ce14;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 12px;
+  border: none;
+  font-family: "Karla";
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.confirmationPage__reservation-button:hover {
+  background-color: #d9b40c;
+  cursor: pointer;
+}
+
+@media (max-width: 550px) {
+  .confirmationPage__reservation {
+    margin-inline: 15px;
+  }
+
+  .confirmationPage__reservation h1 {
+    font-size: 38px;
+  }
+
+  .confirmationPage__reservation p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 353px) {
+  .confirmationPage__reservation h1 {
+    font-size: 30px;
+  }
+}

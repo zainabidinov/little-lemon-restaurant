@@ -29,6 +29,7 @@
   color: #f4ce14;
   font-size: 60px;
   font-family: Markazi Text;
+  line-height: 1;
 }
 
 .subtitle {
@@ -37,6 +38,7 @@
   font-weight: 400;
   font-size: 45px;
   color: #edefee;
+  line-height: 1;
 }
 
 .home__container p {
@@ -82,9 +84,5 @@
     margin-top: 50px;
     margin-right: 0px;
     margin-left: 10px;
-  }
-
-  .home__container .foodHero {
-    margin-top: 15px 0;
   }
 }

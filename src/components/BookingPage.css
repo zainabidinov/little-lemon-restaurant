@@ -1,0 +1,97 @@
+.bookingPage {
+  height: 100vh;
+}
+
+.bookingPage__footer {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-block: 10px;
+  align-items: center;
+  text-align: center;
+  font-family: Karla;
+  font-weight: bold;
+  color: #333;
+}
+
+.bookingPage__container {
+  height: 100%;
+  background-image: url("../assets/restaurant.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.bookingPage__container-form {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 16px;
+  margin-inline: auto;
+  background-color: #edefee;
+  padding: 0 15px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bookingPage__container-form h1 {
+  text-align: center;
+  font-size: 42px;
+  font-family: "Markazi Text";
+  font-weight: 900;
+  margin-bottom: -5px;
+}
+
+.bookingPage__container-form label {
+  box-sizing: border-box;
+  width: 97%;
+  font-family: "Karla";
+  font-size: 16px;
+  color: #374151;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.bookingPage__container-form input {
+  box-sizing: border-box;
+  width: 97%;
+  padding-block: 8px;
+  font-size: 17px;
+  color: #333;
+  font-family: "Karla";
+}
+
+.bookingPage__container-form select {
+  box-sizing: border-box;
+  width: 97%;
+  padding-block: 8px;
+  font-size: 17px;
+  color: #333;
+  font-family: "Karla";
+}
+
+.bookingPage__container-form button {
+  background-color: #f4ce14;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 12px;
+  border: none;
+  font-family: "Karla";
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.bookingPage__container-form button:hover {
+  background-color: #d9b40c;
+  cursor: pointer !important;
+}
+
+@media (max-width: 590px) {
+  .bookingPage__container-form {
+    margin-inline: 15px;
+  }
+}

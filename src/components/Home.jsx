@@ -34,7 +34,7 @@ function Homepage() {
             </p>
 
             <div>
-              <Link to="/booking-page">
+              <Link to="/booking">
                 <button className="reserve_table_btn">Reserve a Table</button>
               </Link>
             </div>
@@ -46,18 +46,6 @@ function Homepage() {
         <Specials />
         <Testimonials />
         <About />
-
-        {/* <div className="second-wrapper">
-          <div className="section-two">
-            <div className="item">
-              <span className="specials-heading">This weeks specials!</span>
-              <br />
-            </div>
-            <div className="item">
-              <button className="online_menu_btn">Online Menu</button>
-            </div>
-          </div>
-        </div> */}
       </div>
       <Footer />
     </React.Fragment>

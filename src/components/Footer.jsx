@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.css";
 import lemonLogo from "../assets/footer-logo.png";
 import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 
 function Footer() {
   return (
@@ -20,16 +21,24 @@ function Footer() {
           <div className="footer__nav-details">
             <h1>Details</h1>
             <p>
-              <Link to="/"  smooth={true} duration={500}>Home</Link>
+              <Link to="/" smooth={true} duration={500}>
+                Home
+              </Link>
             </p>
             <p>
-              <Link to="specials"  smooth={true} duration={500}>Specials</Link>
+              <Link to="specials" smooth={true} duration={500}>
+                Specials
+              </Link>
             </p>
             <p>
-              <Link to="about"  smooth={true} duration={500}>About</Link>
+              <Link to="about" smooth={true} duration={500}>
+                About
+              </Link>
             </p>
             <p>
-              <Link to="/booking-page"  smooth={true} duration={500}>Reservations</Link>
+              <RouterLink to="/booking" smooth={true} duration={500}>
+                Reservations
+              </RouterLink>
             </p>
           </div>
           <div>
@@ -39,7 +48,9 @@ function Footer() {
           </div>
         </nav>
       </div>
-      <div className="footer__copyright">© Copyright 2023 Little Lemon. All rights reserved.</div>
+      <div className="footer__copyright">
+        © Copyright 2023 Little Lemon. All rights reserved.
+      </div>
     </footer>
   );
 }
